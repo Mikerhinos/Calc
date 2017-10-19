@@ -1,0 +1,58 @@
+@font-face {
+  font-family: LCD;
+  src: url('fonts/LCD.ttf');
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7aa2e2;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #777;
+}
+
+.button:hover {background-color: #5a83c4}
+
+.button:active {
+  background-color: #a5442e;
+  box-shadow: 0 5px #555;
+  transform: translateY(4px);
+}
+
+#lcd {
+    text-align: right;
+    height: 60px;
+    background-color: #a9d689;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding-right: 10px;
+    font-family: LCD, Arial;
+    font-size: 2.8em;
+}
+
+.colG {
+    padding: 0;
+}
+
+.colC {
+    padding: 0;
+}
+
+.colD {
+    padding: 0;
+}
+
+.pushKey {
+    margin-left: 118px;
+}
+
+.symbole {
+    width: 64px;
+}
