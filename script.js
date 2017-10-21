@@ -27,15 +27,17 @@
                 }
                 break;
             case "." : // si c'est un point
-                n1 += ".";
-                lcd.innerHTML = n1;
+                if (n1 === ""){
+                    n1 = "0.";
+                }
+                else {
+                    n1 += ".";
+                    lcd.innerHTML = n1;
+                }
                 break;
             case "=" : // si l'utilisateur demande le résultat de l'opération
                 if ((operateur !== "") && (n1,n2 >= 0)){ // s'il y a bien une opération à faire, la transmettre à la fonction de calcul
                     calcul(operateur);
-                }
-                else {
-                    break; // sinon ne pas tenir compte de la touche
                 }
                 break; // ce satané break oublié qui me causait ce problème de innerHTML à zéro...
             case "C" : // si l'utilisateur demande une remise à zéro
@@ -51,7 +53,7 @@
             lcd.innerHTML = n2 + operateur + n1; // affichage de n1 suivi de l'opérateur
         }
         else {
-            if (n1 > 0){ // si n1 est supérieur à zéro
+            if ((n1 > 0) || (n1 == "0.")){ // si n1 est supérieur à zéro
                 n1 += key; // concaténation du chiffre
                 lcd.innerHTML = n1;
             }
