@@ -37,6 +37,7 @@
                 else {
                     break; // sinon ne pas tenir compte de la touche
                 }
+                break; // ce satané break oublié qui me causait ce problème de innerHTML à zéro...
             case "C" : // si l'utilisateur demande une remise à zéro
                 n1 = ""; 
                 n2 = "";
