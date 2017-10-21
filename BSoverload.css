@@ -50,7 +50,16 @@
 }
 
 .pushKey {
-    margin-left: 118px;
+    margin-left: 32px;
+}
+
+#touchesG {
+    margin: 4px;
+    text-align: right;
+}
+
+#touchesD {
+    margin-top: 5px;
 }
 
 .symbole {
