@@ -57,14 +57,17 @@ function calcul(operateur){
             break;
         case "-" : 
             result = Number(n2) - Number(n1);
+            console.log(result);
             lcd.innerHTML = result;
             break
         case "/" : 
             result = Number(n2) / Number(n1);
+            console.log(result);
             lcd.innerHTML = result;
             break
         case "*" : 
             result = Number(n2) * Number(n1);
+            console.log(result);
             lcd.innerHTML = result;
             break;
     }
